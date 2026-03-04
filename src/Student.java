@@ -1,8 +1,8 @@
 public class Student {
-    public int numarMatricol;
-    public String nume;
-    public String prenume;
-    public int formatieDeStudiu;
+    private int numarMatricol;
+    private String nume;
+    private String prenume;
+    private int formatieDeStudiu;
     Student(int nr, String name, String pre, int grupa)
     {
         numarMatricol=nr;
