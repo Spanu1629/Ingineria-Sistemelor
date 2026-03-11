@@ -26,6 +26,17 @@ public class Student {
         }
         return false;
     }
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Student)) return false;
+        Student s = (Student) o;
+        return nume.equals(s.nume) &&
+                prenume.equals(s.prenume) &&
+                formatieDeStudiu.equals(s.formatieDeStudiu);
+    }
+    public int hashCode() {
+        return Objects.hash(nume, prenume, formatieDeStudiu);
+    }
 }
 void main(){
     Student s1=new Student(120, "Popa", "Alis", "TI21/2");
@@ -37,7 +48,8 @@ void main(){
     for (Student s : listaStudenti) {
         System.out.println(s);
     }
-    System.out.println("Studentul Alis exista? " + s1.existaInLista(listaStudenti));
-    System.out.println("Studentul Maria exista? " + s2.existaInLista(listaStudenti));
-    System.out.println("Studentul Paul exista? " + s3.existaInLista(listaStudenti));
+    Set<Student> setStudenti = new HashSet<>(listaStudenti);
+    System.out.println("Exista studentul Alis? "+setStudenti.contains(s1));
+    System.out.println("Exista studentul Maria? "+setStudenti.contains(s2));
+    System.out.println("Exista studentul Paul? "+setStudenti.contains(s3));
 }
