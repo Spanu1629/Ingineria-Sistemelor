@@ -30,7 +30,7 @@ public class Student {
 void main(){
     Student s1=new Student(120, "Popa", "Alis", "TI21/2");
     Student s2=new Student(112, "Popa", "Maria", "TI21/1");
-    Student s3=new Student(125,"Ionescu","Paul","ISM 21/1");
+    Student s3=new Student(125,"Popescu","Paul","ISM 21/1");
     List<Student> listaStudenti = new ArrayList<>();
     listaStudenti.add(s1);
     listaStudenti.add(s2);
