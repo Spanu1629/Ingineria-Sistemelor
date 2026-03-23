@@ -91,8 +91,8 @@ void main(){
             System.out.println(s);
         }
 
-        // sortam dupa nume
-        studenti.sort(Comparator.comparing(Student::getNume));
+        // sortare dupa grupa, apoi dupa nume
+        studenti.sort(Comparator.comparing(Student::getFormatieDeStudiu).thenComparing(Student::getNume));
 
         // pregatim liniile pentru fisierul de iesire
         List<String> outLines = new ArrayList<>();
@@ -102,7 +102,7 @@ void main(){
         }
 
         // salvam in studenti_out.txt
-        Files.write(Paths.get("src/studenti_out.txt"), outLines);
+        Files.write(Paths.get("src/studenti_out_sorted.txt"), outLines);
 
         System.out.println("Lista sortata a fost salvata in studenti_out.txt");
 
