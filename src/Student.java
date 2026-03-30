@@ -68,7 +68,7 @@ void main(){
     System.out.println("Exista studentul Maria? "+setStudenti.contains(s2));
     System.out.println("Exista studentul Paul? "+setStudenti.contains(s3));*/
     try {
-        List<String> linii = Files.readAllLines(Paths.get("src/studenti_in.txt"));
+        List<String> linii = Files.readAllLines(Paths.get("src/Lab3/studenti_in.txt"));
 
         List<Student> studenti = new ArrayList<>();
 
@@ -102,9 +102,9 @@ void main(){
         }
 
         // salvam in studenti_out.txt
-        Files.write(Paths.get("src/studenti_out_sorted.txt"), outLines);
+        Files.write(Paths.get("src/Lab3/studenti_out_sorted.txt"), outLines);
 
-        System.out.println("Lista sortata a fost salvata in studenti_out.txt");
+        System.out.println("Lista sortata a fost salvata in studenti_out_sorted.txt");
 
     } catch (IOException e) {
         System.out.println("Gresire la scriere");
