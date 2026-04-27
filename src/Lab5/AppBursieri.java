@@ -1,4 +1,4 @@
-package Lab5;
+/*package Lab5;
 
 import Modele.Student;
 import Modele.StudentBursier;
@@ -34,3 +34,4 @@ public class AppBursieri {
         }
     }
 }
+*/

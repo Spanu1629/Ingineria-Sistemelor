@@ -1,21 +1,29 @@
 package Modele;
+
 import java.util.List;
 import java.util.Objects;
 
-public class Student {
-    private int numarMatricol;
-    private String nume;
-    private String prenume;
-    private String formatieDeStudiu;
-    private float nota;
+public final class Student {
+    private final int numarMatricol;
+    private final String nume;
+    private final String prenume;
+    private final String formatieDeStudiu;
+    private final float nota;
 
-    public Student(int nr, String name, String pre, String grupa)
-    {
+    public Student(int nr, String name, String pre, String grupa) {
         numarMatricol = nr;
         nume = name;
         prenume = pre;
         formatieDeStudiu = grupa;
         nota = 0.0f;
+    }
+
+    public Student(int nr, String name, String pre, String grupa, float notaStudent) {
+        numarMatricol = nr;
+        nume = name;
+        prenume = pre;
+        formatieDeStudiu = grupa;
+        nota = notaStudent;
     }
 
     public int getNrMatricol() {
@@ -36,10 +44,6 @@ public class Student {
 
     public float getNota() {
         return nota;
-    }
-
-    public void setNota(float nota) {
-        this.nota = nota;
     }
 
     public String toString() {

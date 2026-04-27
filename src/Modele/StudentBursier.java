@@ -2,7 +2,7 @@ package Modele;
 
 import java.util.Objects;
 
-public class StudentBursier extends Student {
+/*public class StudentBursier extends Student {
     private double cuantumBursa;
 
     public StudentBursier(int nr, String name, String pre, String grupa, float nota, double cuantumBursa) {
@@ -37,4 +37,4 @@ public class StudentBursier extends Student {
     public int hashCode() {
         return Objects.hash(super.hashCode(), cuantumBursa);
     }
-}
+}*/

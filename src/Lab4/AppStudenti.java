@@ -46,7 +46,7 @@ public class AppStudenti {
 
                 Student s = mapStudenti.get(id);
                 if (s != null) {
-                    s.setNota(nota);
+                    //s.setNota(nota);
                 }
             }
 
